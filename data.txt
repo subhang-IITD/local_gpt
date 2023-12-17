@@ -1,26 +1,358 @@
-hi i created this python code 
+1. Name: John Smith
+   Age: 28
+   Proficiency: Python, Java, SQL
+   Experience: 5 years
+   Previous Experience: Software Engineer at TechCo Inc.
+   Role: Full Stack Developer
+   Country: USA
+   Work Preference: Remote
 
-import os
-import sys
+2. Name: Emily Johnson
+   Age: 25
+   Proficiency: JavaScript, HTML, CSS
+   Experience: 3 years
+   Previous Experience: Frontend Developer at WebSolutions Ltd.
+   Role: Frontend Developer
+   Country: Canada
+   Work Preference: In-Office
 
+3. Name: Michael Davis
+   Age: 32
+   Proficiency: C++, Python, MATLAB
+   Experience: 8 years
+   Previous Experience: Senior Software Engineer at DataTech Systems
+   Role: C++ Developer
+   Country: Germany
+   Work Preference: Remote
 
-from langchain.document_loaders import TextLoader
-from langchain.document_loaders import  DirectoryLoader
-from langchain.indexes import VectorstoreIndexCreator
-from langchain.llms import openai
-from langchain.chat_models import ChatOpenAI
+4. Name: Sarah White
+   Age: 26
+   Proficiency: PHP, MySQL, Laravel
+   Experience: 4 years
+   Previous Experience: Backend Developer at CodeCrafters LLC
+   Role: Backend Developer
+   Country: UK
+   Work Preference: In-Office
 
+5. Name: David Miller
+   Age: 30
+   Proficiency: Java, Spring Boot, MongoDB
+   Experience: 6 years
+   Previous Experience: Lead Developer at SoftSolutions Inc.
+   Role: Java Developer
+   Country: USA
+   Work Preference: Remote
 
+6. Name: Jessica Turner
+   Age: 29
+   Proficiency: Swift, iOS development, Objective-C
+   Experience: 5 years
+   Previous Experience: Mobile App Developer at AppCreators Ltd.
+   Role: iOS Developer
+   Country: Canada
+   Work Preference: In-Office
 
-import constants
-os.environ["OPENAI_API_KEY"] = constants.APIKEY
-query = sys.argv[1]
+7. Name: Ryan Clark
+   Age: 31
+   Proficiency: Ruby on Rails, PostgreSQL, Heroku
+   Experience: 7 years
+   Previous Experience: Full Stack Developer at CodeCrafters LLC
+   Role: Full Stack Developer
+   Country: Germany
+   Work Preference: Remote
 
-# loader = TextLoader('data.txt')
-loader = DirectoryLoader('data', glob = '*.txt') 
-index = VectorstoreIndexCreator().from_loaders([loader])
+8. Name: Megan Brown
+   Age: 27
+   Proficiency: React, Node.js, Redux
+   Experience: 4 years
+   Previous Experience: Frontend Developer at WebSolutions Ltd.
+   Role: Frontend Developer
+   Country: UK
+   Work Preference: In-Office
 
+9. Name: Christopher Lee
+   Age: 33
+   Proficiency: Java, Python, Docker
+   Experience: 9 years
+   Previous Experience: Solutions Architect at CloudTech Solutions
+   Role: Solutions Architect
+   Country: USA
+   Work Preference: Remote
 
-print(index.query(query, llm = ChatOpenAI())) 
+10. Name: Olivia Hall
+    Age: 24
+    Proficiency: HTML, CSS, JavaScript
+    Experience: 2 years
+    Previous Experience: Junior Web Developer at DesignHub
+    Role: Web Developer
+    Country: Canada
+    Work Preference: In-Office
 
-and now i want to print the output that i get from this code in powershell or command prompt into another text file what changes should i make 
+11. Name: Ethan Wilson
+    Age: 28
+    Proficiency: PHP, Laravel, MySQL
+    Experience: 5 years
+    Previous Experience: Backend Developer at WebTech Solutions
+    Role: Backend Developer
+    Country: Germany
+    Work Preference: Remote
+
+12. Name: Lily Anderson
+    Age: 26
+    Proficiency: JavaScript, React, Node.js
+    Experience: 4 years
+    Previous Experience: Frontend Developer at Digital Innovators
+    Role: Frontend Developer
+    Country: UK
+    Work Preference: In-Office
+
+13. Name: Ethan Turner
+    Age: 30
+    Proficiency: Python, Django, PostgreSQL
+    Experience: 6 years
+    Previous Experience: Senior Software Engineer at CloudBuilders Inc.
+    Role: Python Developer
+    Country: USA
+    Work Preference: Remote
+
+14. Name: Ava Martin
+    Age: 27
+    Proficiency: Java, Spring Boot, MongoDB
+    Experience: 4 years
+    Previous Experience: Software Developer at DataSprint Technologies
+    Role: Java Developer
+    Country: Canada
+    Work Preference: In-Office
+
+15. Name: Benjamin White
+    Age: 32
+    Proficiency: Ruby on Rails, Redis, Heroku
+    Experience: 8 years
+    Previous Experience: Lead Developer at CodeCrafters LLC
+    Role: Full Stack Developer
+    Country: Germany
+    Work Preference: Remote
+
+16. Name: Grace Turner
+    Age: 29
+    Proficiency: Swift, iOS development, Firebase
+    Experience: 5 years
+    Previous Experience: Mobile App Developer at AppInnovate Ltd.
+    Role: iOS Developer
+    Country: UK
+    Work Preference: In-Office
+
+17. Name: Noah Rodriguez
+    Age: 31
+    Proficiency: C#, ASP.NET, SQL Server
+    Experience: 7 years
+    Previous Experience: Full Stack Developer at DevMasters Inc.
+    Role: Full Stack Developer
+    Country: USA
+    Work Preference: Remote
+
+18. Name: Sofia Perez
+    Age: 27
+    Proficiency: React, Redux, GraphQL
+    Experience: 4 years
+    Previous Experience: Frontend Developer at PixelCraft Studios
+    Role: Frontend Developer
+    Country: Canada
+    Work Preference: In-Office
+
+19. Name: Aiden Gonzalez
+    Age: 33
+    Proficiency: Java, Python, Kubernetes
+    Experience: 9 years
+    Previous Experience: DevOps Engineer at CloudSolutions Ltd.
+    Role: DevOps Engineer
+    Country: Germany
+    Work Preference: Remote
+
+20. Name: Harper Carter
+    Age: 25
+    Proficiency: HTML, CSS, JavaScript
+    Experience: 3 years
+    Previous Experience: Junior Web Developer at TechTrends
+    Role: Web Developer
+    Country: UK
+    Work Preference: In-Office
+21. Name: Oliver Mitchell
+    Age: 28
+    Proficiency: Angular, TypeScript, Firebase
+    Experience: 5 years
+    Previous Experience: Frontend Developer at CodeCrafters Inc.
+    Role: Frontend Developer
+    Country: USA
+    Work Preference: Remote
+
+22. Name: Scarlett Moore
+    Age: 26
+    Proficiency: Python, Flask, MongoDB
+    Experience: 4 years
+    Previous Experience: Backend Developer at DataMinds Solutions
+    Role: Backend Developer
+    Country: Canada
+    Work Preference: In-Office
+
+23. Name: Logan Cooper
+    Age: 31
+    Proficiency: Java, Spring Boot, OracleDB
+    Experience: 7 years
+    Previous Experience: Senior Java Developer at SoftSolutions Ltd.
+    Role: Java Developer
+    Country: Germany
+    Work Preference: Remote
+
+24. Name: Aria Bennett
+    Age: 29
+    Proficiency: Ruby on Rails, PostgreSQL, AWS
+    Experience: 6 years
+    Previous Experience: Full Stack Developer at ByteMasters Inc.
+    Role: Full Stack Developer
+    Country: USA
+    Work Preference: Remote
+
+25. Name: Elijah Hall
+    Age: 33
+    Proficiency: C++, Qt, OpenGL
+    Experience: 8 years
+    Previous Experience: Software Engineer at TechWizards Innovations
+    Role: C++ Developer
+    Country: Canada
+    Work Preference: In-Office
+
+26. Name: Isabella Lewis
+    Age: 27
+    Proficiency: React Native, Redux, Express
+    Experience: 4 years
+    Previous Experience: Mobile App Developer at AppSolutions Co.
+    Role: Mobile App Developer
+    Country: Germany
+    Work Preference: Remote
+
+27. Name: Lucas Rodriguez
+    Age: 30
+    Proficiency: PHP, Laravel, MySQL
+    Experience: 6 years
+    Previous Experience: Full Stack Developer at WebCrafters Solutions
+    Role: Full Stack Developer
+    Country: UK
+    Work Preference: In-Office
+
+28. Name: Zoey Foster
+    Age: 25
+    Proficiency: Python, Django, SQLite
+    Experience: 3 years
+    Previous Experience: Junior Python Developer at DataInnovate Labs
+    Role: Python Developer
+    Country: USA
+    Work Preference: Remote
+
+29. Name: Mason Adams
+    Age: 32
+    Proficiency: JavaScript, Vue.js, MongoDB
+    Experience: 7 years
+    Previous Experience: Frontend Developer at InnovateTech Solutions
+    Role: Frontend Developer
+    Country: Canada
+    Work Preference: In-Office
+
+30. Name: Penelope Wright
+    Age: 26
+    Proficiency: Java, Hibernate, MySQL
+    Experience: 5 years
+    Previous Experience: Software Engineer at CodeSprint Innovations
+    Role: Java Developer
+    Country: Germany
+    Work Preference: Remote
+
+31. Name: Levi Scott
+    Age: 28
+    Proficiency: React, Node.js, GraphQL
+    Experience: 6 years
+    Previous Experience: Full Stack Developer at DataCrafters Co.
+    Role: Full Stack Developer
+    Country: USA
+    Work Preference: Remote
+
+32. Name: Stella Turner
+    Age: 30
+    Proficiency: Python, Flask, PostgreSQL
+    Experience: 7 years
+    Previous Experience: Backend Developer at CloudSolutions Ltd.
+    Role: Backend Developer
+    Country: Canada
+    Work Preference: In-Office
+
+33. Name: Grayson Wright
+    Age: 29
+    Proficiency: Swift, iOS development, Firebase
+    Experience: 5 years
+    Previous Experience: iOS Developer at AppBuilders Inc.
+    Role: iOS Developer
+    Country: Germany
+    Work Preference: Remote
+
+34. Name: Ava Morgan
+    Age: 31
+    Proficiency: C#, ASP.NET, SQL Server
+    Experience: 8 years
+    Previous Experience: Senior Full Stack Developer at InnovateSystems Ltd.
+    Role: Full Stack Developer
+    Country: USA
+    Work Preference: Remote
+
+35. Name: Harper James
+    Age: 27
+    Proficiency: React, Redux, Node.js
+    Experience: 4 years
+    Previous Experience: Frontend Developer at PixelCraft Studios
+    Role: Frontend Developer
+    Country: Canada
+    Work Preference: In-Office
+
+36. Name: Elijah Turner
+    Age: 33
+    Proficiency: Java, Spring Boot, MongoDB
+    Experience: 9 years
+    Previous Experience: Tech Lead at SoftSolutions Innovations
+    Role: Java Developer
+    Country: Germany
+    Work Preference: Remote
+
+37. Name: Penelope Adams
+    Age: 26
+    Proficiency: Ruby on Rails, PostgreSQL, Heroku
+    Experience: 5 years
+    Previous Experience: Full Stack Developer at CloudCrafters Inc.
+    Role: Full Stack Developer
+    Country: UK
+    Work Preference: In-Office
+
+38. Name: Scarlett Cooper
+    Age: 28
+    Proficiency: C++, Qt, OpenGL
+    Experience: 6 years
+    Previous Experience: Software Engineer at TechInnovate Solutions
+    Role: C++ Developer
+    Country: USA
+    Work Preference: Remote
+
+39. Name: Logan Harris
+    Age: 30
+    Proficiency: React Native, Express, MongoDB
+    Experience: 7 years
+    Previous Experience: Mobile App Developer at AppSolutions Co.
+    Role: Mobile App Developer
+    Country: Canada
+    Work Preference: In-Office
+
+40. Name: Aria Turner
+    Age: 27
+    Proficiency: PHP, Laravel, MySQL
+    Experience: 4 years
+    Previous Experience: Backend Developer at WebCrafters Solutions
+    Role: Backend Developer
+    Country: Germany
+    Work Preference: Remote

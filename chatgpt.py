@@ -27,8 +27,9 @@ index = VectorstoreIndexCreator().from_loaders([loader])
 
 
 output = index.query(query, llm = ChatOpenAI())
+ 
+# with open('output.txt', 'w') as file:
+#     file.write(output)
+print(output)
 
-
-with open('output.txt', 'w', encoding='utf-8') as output_file:
-    output_file.write(output)
 
